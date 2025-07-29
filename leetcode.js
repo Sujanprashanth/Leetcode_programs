@@ -84,7 +84,7 @@ class Solution {
 OUTPUT:
 FOR 121 TRUE
 
-PROGRAM IN JS 
+PROGRAM IN JavaScript 
 function isPalindrome(a){
     if(a<0){
         return false;
