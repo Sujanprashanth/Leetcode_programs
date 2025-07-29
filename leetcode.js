@@ -60,7 +60,7 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 Constraints:
 -231 <= x <= 231 - 1
 
-PROGRAM
+PROGRAM in java
 class Solution {
     public boolean isPalindrome(int x) {
         if(x<0){
@@ -83,3 +83,28 @@ class Solution {
 }
 OUTPUT:
 FOR 121 TRUE
+
+PROGRAM IN JS 
+function isPalindrome(a){
+    if(a<0){
+        return false;
+    }
+    let original = a;
+    let reversed = 0;
+    while(a!==0){
+        let digit = a % 10;
+        reversed = reversed * 10 + digit;
+        a = Math.floor(a /10);
+    }
+    if(original === reversed){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+var ret = isPalindrome(121)
+console.log(ret)
+OUTPUT:
+FOR 121 TRUE
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
