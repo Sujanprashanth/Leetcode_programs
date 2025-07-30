@@ -184,7 +184,7 @@ var isPowerOfThree = function(n) {
     if(n<=0){
         return false;
     }
-    while(n>1){
+    while(n%3===0){
         n=n/3;
     }
     if(n===1){
@@ -199,4 +199,29 @@ console.log(a);
 
 OUTPUT
 True
+
+PROGRAM IN JAVA:
+class Solution {
+    public boolean isPowerOfThree(int n) {
+        if(n<=0){
+            return false;
+        }
+        while(n%3==0){
+            n=n/3;
+        }
+        if(n==1){
+            return true;
+        }
+        else{
+            return false;
+        }
+        
+    }
+}
+OUTPUT:
+True
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
