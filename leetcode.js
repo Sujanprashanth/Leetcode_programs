@@ -237,7 +237,7 @@ Example 3:
 Input: n = 1
 Output: true
  
-Constraints:
+Constraints:-
 -231 <= n <= 231 - 1
 
 PROGRAM IN JS
