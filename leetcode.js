@@ -416,3 +416,96 @@ Input nums = [0,1,2,2,3,0,4,2]
 val = 2
 Output [0,1,3,0,4]
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+Task in java
+Program:
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String repeat = "";
+        int studentcount = 0;
+        String[][] students = new String[5][5];
+        do{
+            System.out.print("Enter your name: ");
+            String name = sc.nextLine(); 
+            System.out.print("Enter your age: ");
+            int age = sc.nextInt();
+            sc.nextLine();
+            int[] marks = new int[3];
+            System.out.println("Enter marks for 3 subjects: ");
+            int sum = 0;
+            for(int i=0;i<3;i++){
+                System.out.print("Subject "+(i+1)+":");
+                marks[i]=sc.nextInt();
+                sum+=marks[i];
+            }
+            sc.nextLine();
+            int avg = sum/3;
+            System.out.println("Total Marks: "+sum);
+            System.out.println("Average Marks: "+avg);
+            if(avg>=90){
+                System.out.println("Grade: A");
+            }
+            else if(avg>=75){
+                System.out.println("Grade: B");
+            }
+            else if(avg>=50){
+                System.out.println("Grade: C");
+            }
+            else{
+                System.out.println("Grade: F");
+            }
+            int j=0;
+            System.out.println("Countdown from average:");
+            int tempavg=avg;
+            while(j<9){
+                tempavg-= 10;
+                if(tempavg<0){
+                    break;
+                }
+                else{
+                    System.out.println(tempavg);
+                }
+                j++;
+            }
+            students[studentcount][0]=name;
+            students[studentcount][1]=String.valueOf(age);
+            students[studentcount][2]=String.valueOf(marks[0]);
+            students[studentcount][3]=String.valueOf(marks[1]);
+            students[studentcount][4]=String.valueOf(marks[2]);
+            studentcount++;
+            System.out.println("\nDo you want to enter marks again? (yes/no): ");
+            repeat = sc.nextLine();
+            System.out.println("------------------------------------");
+        }while(repeat.equalsIgnoreCase("yes"));
+        System.out.println("\nAll Students Entered:");
+        for(int k=0;k<studentcount;k++){
+            System.out.println("Name: "+students[k][0]+","+"Age: "+students[k][1]+","+"Marks: "+students[k][2]+","+students[k][3]+","+students[k][4]);
+        }
+   }
+}
+output:
+Enter your name: Sujan
+Enter your age: 23
+Enter marks for 3 subjects: 
+Subject 1:98
+Subject 2:89
+Subject 3:75
+Total Marks: 262
+Average Marks: 87
+Grade: B
+Countdown from average:
+77
+67
+57
+47
+37
+27
+17
+7
+
+Do you want to enter marks again? (yes/no): 
+------------------------------------
+
+All Students Entered:
+Name: Sujan,Age: 23,Marks: 98,89,75
