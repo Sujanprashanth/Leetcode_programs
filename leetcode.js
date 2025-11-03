@@ -609,3 +609,75 @@ class Main {
     }
 }
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sum of digits in java:
+Program:
+class Main{
+    public static void main(String[] args){
+        int n=1234,sum=0,A=0;
+        while(n!=0){
+            A=n%10;
+            sum+=A;
+            n=n/10;
+        }
+        System.out.print("Sum of digits: "+sum);
+    }
+}
+Output:
+Sum of digits: 10
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Count the no of digits:
+Program:
+class Main{
+    public static void main(String[] args){
+        int num = 1234,s,count++;
+        while(num!=0){
+            s=num/10;
+            count++;
+        }
+        System.out.print("No of digits: "+count);
+    }
+}
+Output:
+No of Digits : 4
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Reverse the number:
+Program:
+class Main{
+    public static void main(String[] args){
+        int n = 1234,rev=0,l=0;
+        System.out.println("The number is: "+n);
+        while(n!=0){
+            l=n%10;
+            rev=(rev*10)+l
+            n=n/10;
+        }
+        System.out.println("The reverse of the given number: "+rev);
+    }
+}
+Output:
+The number is: 1234
+The reverse of the given number: 4321
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+To check if the given number is a palindrome or not
+Program:
+class Main{
+    public static void main(String[] args){
+        int num = 121,rev=0,l=0,c=num;
+        while(num!=0){
+            l=num%10;
+            rev=(rev*10)+l;
+            num=num/10;
+        }
+        if(c==rev){
+            System.out.println(c+" is a palindrome");
+        }
+        else{
+            System.out.println(c+" is not a palindrome");
+        }
+    }
+}
+Output:
+121 is a palindrome
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+To find an Armstrong number in java
+Program
