@@ -713,3 +713,71 @@ class Main{
 }
 Output:
 The factorial of 5 is :120
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program to find the given number is a prime number or not
+Program:
+class Main{
+    public static void main(String[]args){
+        int num = 2,count=0;
+        for(int i =1;i<=num;i++){
+            if(num%1==0){
+                count++;
+            }
+        }
+        if(count==2){
+            System.out.print("Prime");
+        }
+        else{
+            System.out.print("not a prime");
+        }
+    }
+}
+Output:
+Prime
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program to find whether a number is a perfect number or not
+Program:
+class Main{
+    public static void main(String[]args){
+        int num = 6,sum=0,num1=num;
+        for(int i =0;i<num;i++){
+            if(num%i==0){
+                sum+=i;
+            }
+        }
+        if(num1==sum){
+            System.out.print(num1+" is a perfect number");
+        }
+        else{
+            System.out.print(num1+" is not a perfect number");
+        }
+    }
+}
+Output:
+6 is a perfect number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Program to find whether a number is a strong number or not
+Program:
+class Main{
+    public static void main(String[]args){
+        int num = 145,sum=0,num1=num,l=0;
+        while(num!=0){
+            l=num%10;
+            int mul =1;
+            for(int i=l;i>=1;i--){
+                mul*=i;
+            }
+            sum+=mul
+            num=num/10;
+        }
+        if(num1==sum){
+   		    System.out.print(num1+" is a strong number");
+        }
+        else{
+   		    System.out.print(num1+" is not a strong number");
+        }
+    }
+}
+Output:
+145 is a strong number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
