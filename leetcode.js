@@ -680,4 +680,23 @@ Output:
 121 is a palindrome
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 To find an Armstrong number in java
-Program
+Program:
+class Main{
+    public static void main(String[] args){
+        int num=153,sum=0,l=0,num1=num;
+        while(num!=0){
+            l=num%10;
+            sum+=Math.pow(l,3);
+            num/=10;
+        }
+        if(num1==sum){
+            System.out.println(num1+" is an armstrong number");
+        }
+        else{
+            System.out.println(num1+" is not an armstrong number");
+        }
+    }
+}
+Output:
+153 is an armstrong number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
