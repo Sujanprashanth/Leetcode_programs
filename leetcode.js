@@ -700,3 +700,16 @@ class Main{
 Output:
 153 is an armstrong number
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Factorial of a number using loops no recurssion
+Program:
+class Main{
+    public static void main(String[] args){
+        int num=5,mul=1;
+        for(int i=num;i>=1;i--){
+            mul*=i;       
+        }
+        System.out.println("The factorial of "+num+" is :"+mul);
+    }
+}
+Output:
+The factorial of 5 is :120
