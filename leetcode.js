@@ -798,3 +798,108 @@ class Main{
 Output:
 The fionacci series of 8 is:0 1 1 2 3 5 8 13 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sum of N natural numbers:
+Program:
+class Main{
+    public static void main(String[] args){
+        int n=5,sum=0;
+        for(int i=1;i<=n;i++){
+            sum+=i;
+        }
+        System.out.print("The sum of "+n+" natural numbers is:"+sum);
+    }
+}
+Output:
+The sum of 10 natural numbers is:55 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Given number ia an automorphic number or not
+Program:
+class Main{
+    public static void main(String[] args){
+        int n=25,digits=0,l=0;
+        int s=n*n;
+        int temp=n
+        while(temp>0){
+            digits++;
+            n/=10;
+        }
+        l = s % (int)Math.pow(10,digits);
+        if(n==l){
+             System.out.print(n+" is an automorphic number");
+        }
+        else{
+             System.out.print(n+" is not an automorphic number");
+        }
+    }
+}
+Output:    
+25 is an automorphic number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Given number is a spy number or not:
+Program:
+class Main{
+    public static void main(String[] args){
+        int n=134,sum=0,nl=0,m=n,mul=1,ml=0,d=n;
+        while(n!=0){
+            nl=n%10;
+            sum+=nl;
+            n/=10;
+        }
+        while(m!=0){
+            ml=m%10;
+            mul*=ml
+            m/=10;
+        }
+        if(sum==mul){
+            System.out.print(d+" is a spy number");
+        }
+        else{
+            System.out.print(d+" is not a spy number");
+        }
+    }
+}
+Output:
+134 is not a spy number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Neon number or not
+Program:
+class Main{
+    public static void main(String[]args){
+        int n=9,s=0,d=n,sum=0,l=0;
+        s=n*n;
+        while(s!=0){
+            l=s%10;
+            sum+=l
+            n/=10
+        }
+        if(d==sum){
+            System.out.print(d+" is a neon number");
+        }
+        else{
+            System.out.print(d+" is not a neon number");
+        }
+    }
+}
+Output:
+9 is a neon number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Given number is a Harshad (Niven) Number:
+Program:
+class Main{
+    public static void main(String[] args){
+        int n=18,sum=0,l=0;
+        while(n!=0){
+            l=n%10;
+            sum+=l;
+            n/=10;
+        }
+        if(n%sum==0){
+  	        System.out.print(d+" is a Harshad number");
+        }
+        else{
+            System.out.print(d+" is not a Harshad number");
+        }
+    }
+}
+Output:
+19 is not a Harshad number
