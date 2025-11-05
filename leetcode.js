@@ -972,4 +972,29 @@ class Main{
 }
 Output:
 1 2 6 24 120 
-    
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Duck Number:
+Program:
+class Main{
+    public static void main(String[]args){
+        int num=1123,l=0,temp=num;
+        boolean a = false;
+        while(num!=0){
+            l=num%10;
+            if(l==0){
+                a=true;
+                break;
+            }
+            num/=10;
+        }
+        if(a){
+            System.out.print(temp+" is a duck number");
+        }
+        else{
+            System.out.print(temp+" is not a duck number");
+        }
+    }
+}
+Output:
+1123 is not a duck number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
