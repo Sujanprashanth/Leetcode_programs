@@ -903,3 +903,73 @@ class Main{
 }
 Output:
 19 is not a Harshad number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Palindrome Numbers in a Range (e.g., 1 to 150):
+Program:
+class Main{
+    public static void main(String[] args){
+        int num=0,l=0,n=0;
+        for(int i=0;i<=num;i++){
+            n=i;
+            int rev=0;
+            while(n!=0){
+                l=n%10;
+                rev=(rev*10)+l;
+                n/=10;
+            }
+            if(i==rev){
+                System.out.print(rev+" ");
+            }
+                
+        }
+        
+    }
+}
+Output:
+1 2 3 4 5 6 7 8 9 11 22 33 44 55 66 77 88 99 101 111 121 131 141 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Magic Number or not
+Program:
+class Main{
+    public static void main(String[]args){
+        int num=1729,l=o,sum=0,d=num;
+        while(num!=0){
+            l=num%10;
+            sum+=l;
+            num/=10;
+        }
+        while(sum>9){
+            int temp = sum;
+            sum=0;
+            while(temp!=0){
+                l=temp%10;
+                sum+=l;
+                temp/=10;
+            }
+        }
+        if(d==1){
+            System.out.print(d+" is a magic number");
+        }
+        else{
+            System.out.print(d+" is not a magic number");
+        }
+    }
+}
+Output:
+1729 is a Magic Number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Factorial Series (up to 5):
+Program:
+class Main{
+    public static void main(String[]args){
+        int mul=1,a=1;
+        for(int i=1;i<=5;i++){
+            mul*=a;
+            a++;
+            System.out.print(mul+" ")
+        }
+    }
+}
+Output:
+1 2 6 24 120 
+    
