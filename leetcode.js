@@ -998,3 +998,32 @@ class Main{
 Output:
 1123 is not a duck number
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Evil number or not
+Program:
+class Main{
+    public static void main(String[] args){
+        int n=6,rem=0,quo=0,count=0,d=n;
+        String r = "";
+        while(n>0){
+            quo=n/2;
+            rem=n%2;
+            r=rem+r;
+            n=quo;
+        }
+        for(int i =0;i<r.length();i++){
+            if(r.chatAt(i)=='1'){
+                count++
+            }
+        }
+        if(count%2==0){
+            System.out.print(d+" is an evil number");
+        }
+        else{
+            System.out.print(d+" is not an evil number");
+        }
+    }
+}
+Output:
+6 is an evil number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
