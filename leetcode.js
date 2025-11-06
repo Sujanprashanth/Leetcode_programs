@@ -1026,4 +1026,29 @@ class Main{
 Output:
 6 is an evil number
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+Disarium Number or not:
+Program:
+class Main{
+    public static void main(String[]args){
+        int num = 135,sum=0,count=0,l=0,temp=num,c=num;
+        while(num!=0){
+            l=num%10;
+            count++
+            num/=10;
+        }
+        while(temp!=0){
+            l=temp%10;
+            sum+=Math.pow(l,count);
+            temp/=10
+        }
+        if(c==sum){
+            System.out.print(c+" is a disarium number");
+        }
+        else{
+            System.out.print(c+" is not a disarium number");
+        }
+    }
+}
+Output:
+135 is a disarium number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
