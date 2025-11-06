@@ -1052,3 +1052,33 @@ class Main{
 Output:
 135 is a disarium number
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Happy number or not:
+class Main{
+    public static void main(String[]args){
+        int num=19,l=0,sum=0,c=num,s=2;
+        while(num!=0){
+            l=num%10;
+            sum+=Math.pow(l,s);
+            num/=10
+        }
+        int temp=sum;
+        while(temp>9){
+            sum=0;
+            while(temp!=0){
+                l=temp%10;
+                sum+=Math.pow(l,s);
+                temp/=10;
+            }
+            temp=sum;
+        }
+        if(c==1){
+            System.out.print(c+" is a Happy number");
+        }
+        else{
+            System.out.print(c+" is not a Happy number");
+        }
+    }
+}
+Output:
+19 is a Happy number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
