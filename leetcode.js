@@ -1082,3 +1082,32 @@ class Main{
 Output:
 19 is a Happy number
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tech Number or not
+Program:
+class Main{
+    public static void main(String[]args){
+        int n=2028,l=0,s=0,count=0,divisor=0,fh=0,sh=0,ad=0,temp=n,m=n;
+        while(n!=0){
+            l=n%10;
+            count++;
+            n/=10;
+        }
+        if(count%2==0){
+            divisor=Math.pow(10,count/2);
+            fh=temp/100;
+            sh=temp%100;
+            ad=fh+sh;
+            s=ad*ad;
+            if(s==m){
+                System.out.println(m + " is a Tech Number");
+            }
+            else{
+                System.out.println(m + " is not a Tech Number");
+            }
+        }
+        else{
+            System.out.print(m+" is not a tech number because of odd count");
+        }
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
