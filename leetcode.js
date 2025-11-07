@@ -1086,7 +1086,7 @@ Tech Number or not
 Program:
 class Main{
     public static void main(String[]args){
-        int n=2028,l=0,s=0,count=0,divisor=0,fh=0,sh=0,ad=0,temp=n,m=n;
+        int n=2025,l=0,s=0,count=0,divisor=0,fh=0,sh=0,ad=0,temp=n,m=n;
         while(n!=0){
             l=n%10;
             count++;
@@ -1110,4 +1110,50 @@ class Main{
         }
     }
 }
+Output:
+2025 is a Tech Number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sunny Number or not:
+Program:
+class Main {
+    public static void main(String[] args) {
+        int n = 80;
+        int sq = (int)Math.sqrt(n + 1);
+        if (sq * sq == n + 1)
+            System.out.println(n + " is a Sunny Number");
+        else
+            System.out.println(n + " is not a Sunny Number");
+    }
+}
+Output:
+80 is a Sunny Number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Trimorphic number or not:
+Program:
+class Main {
+    public static void main(String[] args) {
+        int n = 24;
+        int cube = n * n * n;
+        if (String.valueOf(cube).endsWith(String.valueOf(n)))
+            System.out.println(n + " is a Trimorphic Number");
+        else
+            System.out.println(n + " is not a Trimorphic Number");
+    }
+}
+Output:
+24 is a Trimorphic Number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Buzz Number or not:
+Program:
+class Main {
+    public static void main(String[] args) {
+        int n = 27;
+        if (n % 7 == 0 || n % 10 == 7)
+            System.out.println(n + " is a Buzz Number");
+        else
+            System.out.println(n + " is not a Buzz Number");
+    }
+}
+Output:
+27 is a Buzz Number
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
