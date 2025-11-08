@@ -510,7 +510,7 @@ Do you want to enter marks again? (yes/no):
 All Students Entered:
 Name: Sujan,Age: 23,Marks: 98,89,75
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Array implementation in java DS
+Array implementation in java DS
 import java.util.*;
 class DynamicArray{
     private int size;
@@ -1156,4 +1156,22 @@ class Main {
 }
 Output:
 27 is a Buzz Number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Strings:
+Print each character one by one:
+Program:
+class Main{
+    public static void Main(String[]args){
+        String a = "Hello";
+        for(int i=0;i<=a.length()-1;i++){
+            System.out.println(a.charAt(i));
+        }
+    }
+}
+Output:
+H
+e
+l
+l
+o
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
