@@ -1280,4 +1280,41 @@ class Main{
 Output:
 4
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Reverse the string manually.
+Reverse the string manually.
+Program:
+class Main{
+	public static void main(String[]args){
+		String s = "Sujan";
+		for(int i = s.length()-1;i>=0;i--){
+			System.out.print(s.charAt(i));
+		}
+	}
+}
+Output:
+najuS
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Check if two strings are equal (using .equals() and without .equals()).
+Program:
+class Main{
+	public static void main(String[]args){
+		String s1="Sujan",s2="Sujan";
+		System.out.println(s1==s2);   // true (same reference)
+		System.out.println(s1.equals(s2));   // true (same content)
+	}
+}
+Output:
+true
+true
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Concatenate two strings and print the result.
+Program:
+class Main{
+	public static void main(String[]args){
+		String s1 = "Sujan",s1 = "@2002";
+		String d = s1.concat(s2);
+		System.out.print(d);
+	}
+}
+Output:
+Sujan@2002
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
