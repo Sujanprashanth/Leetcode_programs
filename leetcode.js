@@ -1175,3 +1175,109 @@ l
 l
 o
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Count total number of characters in the string (without using length()).
+Program:
+class Main{
+    public static void main(String[]args){
+        String s = "Hello";
+        int count=0;
+        for(char a : s.toCharArray()){
+            count++;
+        }
+        System.out.print("Total number of characters in the string: "+count);
+    }
+}
+Output:
+Total number of characters in the string: 5
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Convert the string to uppercase.
+public class Main
+{
+	public static void main(String[] args) {
+		String s = "Hello";
+		System.out.print(s.toUpperCase());
+	}
+}
+Output:
+HELLO
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Convert the string to lowercase.
+public class Main
+{
+	public static void main(String[] args) {
+		String s = "HELLO";
+		System.out.print(s.toLowerCase());
+	}
+}
+Output:
+hello
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Count the number of vowels and consonants.
+Program:
+class Main{
+    public static void main(String[]args){
+        String s = "ICE";
+        int vowels=0,consonants=0;
+        for(int i=0;i<s.length();i++){
+            if(String.valueOf(s.charAt(i).equalsIgnoreCase("a")||String.valueOf(s.charAt(i).equalsIgnoreCase("e")||String.valueOf(s.charAt(i).equalsIgnoreCase("i")||String.valueOf(s.charAt(i).equalsIgnoreCase("o")||String.valueOf(s.charAt(i).equalsIgnoreCase("u")){
+                vowels++;
+            }
+            else{
+                consonants++;
+            }                                                                                                                                                       
+        }
+        System.out.println("Vowels: "+vowels);
+        System.out.println("Consonants: "+consonants);
+    }
+}
+Output:
+Vowels: 2
+Consonants: 1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Count digits, alphabets, and special characters
+Program:
+class Main{
+    public static void main(String[]args){
+        String s = "Sujan@2002";
+        int alphabets=0,digits=0,specialcharacters=0;
+        for(int i = 0 ; i < s.length(); i++){
+            char ch = s.charAt(i);
+            if((ch>='a' && ch<='z')||(ch>='A' && ch<='Z')){
+                alphabets++;
+            }
+            else if(ch>='0' && ch<='9'){
+                digits++;
+            }
+            else{
+                specialcharacters++;
+            }
+        }
+        System.out.println("Alphabets: "+alphabets);
+        System.out.println("Digits: "+digits);
+        System.out.println("Special Characters: "+specialcharacters);
+    }
+}
+Output:
+Alphabets: 5
+Digits: 4
+Special Characters: 1
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Count how many spaces are in the string:
+Program:
+class Main{
+    public static void main(String[]args){
+        String s = "Java is fun to learn";
+        int space_count=0;
+        for(int i=0;i<s.length();i++){
+            char ch = s.charAt(i);
+            if(ch==' '){
+                space_count++;
+            }
+        }
+        System.out.print(space_count);
+    }
+}
+Output:
+4
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Reverse the string manually.
