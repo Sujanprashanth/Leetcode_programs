@@ -1369,8 +1369,20 @@ class Main{
 Output:
 Replace all spaces with a - or _
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-	
+Remove all vowels from the string.
+Program:
+class Main{
+	public static void main(String[]args){
+		String s="java",d="hello";
+		s=s.replaceAll("[AEIOUaeiou]","");
+		d=d.replace("e","m");
+		System.out.println(s);
+        System.out.print(d);
+	}
+}
+Output:
+Jv
+Hmllo
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
