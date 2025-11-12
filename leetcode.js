@@ -1318,3 +1318,63 @@ class Main{
 Output:
 Sujan@2002
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Check if a string is a palindrome.
+Program:
+class Main{
+	public static void main(String[]args){
+		String s = "Sujan",r="";
+		for(int i=s.length()-1;i>=0;i++){
+			r=r+s.charAt(i);
+		}
+		if(s.equalsIgnoreCase(r)){
+			System.out.print(s+" is a palindrome");
+		}
+		else{
+			System.out.print(s+" is not a palindrome");
+		}
+	}
+}
+Output:
+Sujan is not a palindrome
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Count the number of words in a sentence
+Program:
+public class Main
+{
+	public static void main(String[] args) {
+	    String s=" Java is fun to learn";
+		int count_spaces=0,count_words=0;
+		s=s.trim();
+		for(int i =0;i<s.length();i++){
+		    if(s.charAt(i)==' '){
+		        count_spaces++;
+		    }
+		}
+		count_words=count_spaces+1;
+		System.out.println("Total no of words is : "+count_words);
+	}
+}
+Output:
+Total no of words is : 5
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Replace all spaces with a - or _
+Program:
+class Main{
+	public static void main(String[]args){
+		String s = "Hello World Java";
+		s=s.trim();
+		System.out.print(s.replace(" ","_"));
+	}
+}
+Output:
+Replace all spaces with a - or _
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+	
