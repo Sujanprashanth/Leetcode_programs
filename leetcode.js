@@ -1384,9 +1384,48 @@ Output:
 Jv
 Hmllo
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
+Swap the first and last character of a string
+Program:
+class Main{
+	public static void main(String[]args){
+		String s = "Hello",mid="",mod_s="";
+		char first_ch='',second_ch='';
+		s=s.trim();
+		first_ch=s.charAt(0);
+		second_ch=s.charAt(s.length()-1);
+		mid=s.substring(1,s.length()-1);
+		mod_s=second_ch+mid+first_ch;
+		System.out.print(mod_s);
+	}
+}
+Output:
+oellH
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Extract and print only numbers from an alphanumeric string
+Program:
+class Main{
+	public static void main(String[]args){
+		String s = "Java123World2025",r="";
+		char ch=' ';
+		boolean b = false;
+		for(int i=0;i<s.length();i++){
+			ch=charAt(i);
+			if(ch>=0 && ch<=9){
+				r+=ch;
+				b=true;
+			}
+		}
+		if(b){
+			System.out.print(r);
+		}
+		else{
+			 System.out.print("there are no numbers in the given string");
+		}
+	}
+}
+Output:
+1232025
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 	
