@@ -1426,6 +1426,60 @@ class Main{
 Output:
 1232025
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Print all characters at even and odd positions separately
+Program:
+class Main{
+	public static void main(String[]args){
+		String s="HELLO",evenPos="",oddPos="";
+		for(int i =0;i<s.length();i++){
+			if(i%2!=0){
+				evenPos+=s.charAt(i);
+			}
+			else{
+				oddPos+=s.charAt(i);
+			}
+		}
+		System.out.println("Even position characters: "+evenPos);
+		System.out.println("Odd position characters: "+oddPos);
+	}
+}
+Output:
+Even position characters: E L  
+Odd position characters: H L O
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Count how many times a specific character occurs
+Program:
+import java.util.*;
+class Main{
+	public static void main(String[]args){
+		String s="";
+		char c=' ';
+		int count=0;
+		boolean b = false;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("String: ");
+		s=sc.next();
+		System.out.print("Character: ");
+		c=sc.next().charAt(0);
+		for(int i =0;i<s.length();i++){
+			if(c==s.charAt(i)){
+				count++;
+				b=true;
+			}
+		}
+		if(b){
+			 System.out.print(c+" appears "+count+" times");
+		}
+		else{
+		    System.out.print("The entered character"+c+" is not present in the string");
+		}
+	}
+}
+Output:
+String:success
+Character:s
+s appears 3 times
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-	
+
