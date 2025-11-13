@@ -1480,6 +1480,26 @@ String:success
 Character:s
 s appears 3 times
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Remove duplicate characters from the string
+Program:
+import java.util.*;
+class Main{
+	public static void main(String[]args){
+		String s = "",r="";
+		System.out.print("Enter the string:");
+		s=sc.next();
+		for(int i =0;i<s.length();i++){
+			char c = s.charAt(i);
+			if(r.indexOf(c)==-1){
+				r+=c
+			}
+	     }
+		System.out.print(r);
+	}
+}
+Output:
+progamin
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
