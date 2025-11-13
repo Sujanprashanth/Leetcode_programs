@@ -1500,6 +1500,33 @@ class Main{
 Output:
 progamin
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
+Find the frequency of each character in the string
+Program:
+class Main{
+	public static void main(String[]args){
+		String s = "banana",r="";
+		char c = ' ',d=' ';
+		int count=0;
+		for(int i =0;i<s.length();i++){
+			c=s.charAt(i);
+			if(r.indexOf(c)==-1){
+				r+=c
+			}
+		}
+		for(int j =0;j<r.length();j++){
+			d=r.charAt(j);
+			for(int k=0;k<s.length();k++){
+				if(d==s.charAt(k)){
+					count++;
+				}
+			}
+			System.out.println(r.charAt(j)+":"+count);
+			count=0
+		}
+	}
+}
+Output:
+b = 1  
+a = 3  
+n = 2
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
